@@ -1,0 +1,183 @@
+body{
+    font :15/1.5 Arial ,Helvetica , sans-serif;
+    margin:0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.container{ 
+    width: 100%;
+    margin:auto;
+    overflow: hidden;
+}
+.container-1{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.container-1 #branding, .container-1 nav{
+    margin: auto;
+}
+@media (max-width: 768px) {
+    .container-1{
+        grid-template-columns: 100%;
+        grid-template-rows: 100% 100%;
+    }
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #35424a;
+    color:#ffffff;
+    padding-top:30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+header li{
+    float:left;
+    display:inline;
+    padding: 0 20px 0 20px;
+  }
+header #branding h1{
+    float: left;
+}
+header nav{
+    float:right;
+    margin-top:10px;
+  }
+  header nav li{text-decoration: none;}
+header .highlight, header .current a{
+    color:#e8491d;
+    font-weight: bold;
+}
+header a:hover{
+    color: #cccccc;
+    font-weight: bold;
+}
+#showcase{
+    min-height: 400px;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg");
+    background-size: cover;
+    /* background-image: url("./bg.jpg") no-repeat ; */
+    text-align: center;
+    color:#ffffff;
+}
+#showcase h1{
+    margin-top:100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+#showcase p{
+    font-size: 20px;
+}
+#newsletter{
+padding: 15px;
+color:#ffffff;
+background-color: #35424a;
+}
+#newsletter h1{
+    float: left;
+}
+#newsletter form{
+    float: right;
+    margin-top: 15px;
+}
+#newsletter input[type="email"]
+{padding: 4px;
+height: 25px;
+width: 250px;}
+.button_1{
+    height: 38px;
+    background: #e8491d;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+}
+#boxes{
+    margin-top: 20px;
+}
+#boxes .box{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+} 
+#boxes .box img{
+    width:90px;
+}
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color:#ffffff;
+    background-color: #e8491d;
+    text-align: center;
+}
+@media screen and (max-width:480px){
+    .container{
+        width: 30%;
+    }
+    header a{
+        font-size: 6px;
+    }
+    #branding h1{
+        font-size: 15px;
+        float: none;
+    }
+    header li a{
+        float:none;
+        display:inline;
+        text-decoration: none;
+        text-align: center;
+        display:inline-flex;
+        padding: 0 0 0 0;
+        font-size: 10px;
+      
+    }
+    #showcase h1{
+        font-size: 15px;
+        float: none;
+    }
+    #showcase p{
+        font-size: 10px;
+        float: none;
+    }
+    #newsletter h1{
+        font-size: 15px;
+        float: none;
+    }
+    #newsletter p{
+        font-size:10px;
+        float: none;
+    }
+    .button_1{
+        height: 5px;
+        background: #e8491d;
+        border: 0;
+        padding-left: 5px;
+        padding-right: 5px;
+        color: #ffffff;
+    }
+    #boxes h3{
+        font-size: 8px;
+    }
+    #boxes p{
+        font-size: 5px;
+    }
+    #boxes img{
+        width:20px;
+        height:50px;;
+    }
+
+    footer{
+        padding: 5px;
+        margin-top: 5px;
+        color:#ffffff;
+        background-color: #e8491d;
+        text-align: center;
+        font-size: 10px;
+    }
+}
